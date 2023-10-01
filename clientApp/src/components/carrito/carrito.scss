@@ -1,0 +1,64 @@
+// Carrito.scss
+
+// Estilo para el botón "Mostrar carrito"
+.mostrar-carrito-button {
+    background-color:  #db8c1c; // Color de fondo azul
+    color: #fff; // Color de texto blanco
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; // Agrega una transición suave al efecto hover
+
+    &:hover {
+        box-shadow: 0 0 0 2px #1900fa; // Agrega un efecto de sombra alrededor del botón al hacer hover
+    }
+
+    &.activo {
+        background-color: #dc3545; // Cambia el color de fondo cuando el modal está abierto
+    }
+}
+
+
+// Estilo para el modal del carrito
+.modal-carrito {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // Fondo semitransparente oscuro
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100; // Asegura que el modal esté en la parte superior
+
+    .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        max-width: 400px; // Ancho máximo del contenido del modal
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    button {
+        background-color: #dc3545; // Color de fondo rojo para los botones de eliminar y cerrar
+        color: #fff; // Color de texto blanco
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: #c82333; // Cambia el color de fondo en el hover
+        }
+    }
+}

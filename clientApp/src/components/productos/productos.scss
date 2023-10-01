@@ -1,0 +1,211 @@
+.grid-container__principal {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-height: 100vh;
+    grid-template-areas:
+      "aside main";
+  }
+  .producto-1,
+  .producto-2,
+  .producto-3,
+  .producto-4,
+  .producto-5,
+  .producto-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5%;
+    padding-bottom: 2rem;
+  }
+  .producto-1 {
+    grid-area: img1;
+  }
+  .producto-2 {
+    grid-area: img2;
+  }
+  .producto-3 {
+    grid-area: img3;
+  }
+  .producto-4 {
+    grid-area: img4;
+  }
+  .producto-5 {
+    grid-area: img5;
+  }
+  .producto-6 {
+    grid-area: img6;
+  }
+  .producto-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  aside {
+    margin-top: 2rem;
+    grid-area: aside;
+    min-width: 6rem;
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 1rem;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(218, 224, 229);
+  }
+  aside p:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+  main {
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 2rem;
+    grid-area: main;
+    min-height: 80vh;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: 4rem;
+    grid-template-areas:
+      "img1 img2 img3"
+      "img4 img5 img6";
+  }
+  main h3{
+    color: #cb7a09;
+  }
+  main p{
+    color: white;
+  }
+  
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none; /* Evita el contorno al hacer clic */
+    position: absolute;
+    zoom: 2;
+  }
+  .icon-button .material-icons-outlined {
+    filter: drop-shadow(2px -1px 4px rgba(0, 0, 0, 0.60));
+    transition: transform 0.2s;
+  }
+  .icon-button .material-icons-outlined:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+  }
+  .shadow {
+    -webkit-box-shadow: 2px -1px 27px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -1px 27px 3px rgba(0,0,0,0.75);
+    box-shadow: 2px -1px 27px 3px rgba(0,0,0,0.75);
+    
+  }
+  
+  .shadow-aside {
+    -webkit-box-shadow: 10px 2px 18px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 2px 18px 1px rgba(0,0,0,0.75);
+    box-shadow: 10px 2px 18px 1px rgba(0,0,0,0.75);
+    
+  }
+  .categorias p{
+    display: flex;
+    align-items: center;
+    border: solid black 1px;
+    padding: 20px;
+    margin: -1px;
+  }
+  .page-counter{
+    // grid-area: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: .5rem;
+    margin-bottom: -2rem;
+  }
+  
+  @media (max-width: 1580px){
+    main {
+      grid-area: main;
+      justify-content: center;
+      grid-template-areas:
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
+    }
+  }
+  
+  @media (max-width: 1060px){
+    main {
+      grid-area: main;
+      justify-content: center;
+      grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+    }
+    .producto-1{
+      min-width: 60vw;
+    }
+    .grid-container__principal {
+        grid-template-columns: auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+          "aside"
+          "main"
+      }
+      aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    .categorias{
+    display: flex;
+    flex-direction: row;
+    }
+  }
+  @media (max-width: 700px ){
+    
+    .producto-1{
+      min-width: 85vw;
+      padding: 10px;
+    }
+    main{
+      margin:25px;
+    }
+  }
+  
+  // from page 'Products'
+  .grid-container__principal-productos {
+    grid-template-columns: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "aside"
+      "main";
+    aside{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+      
+  }
+  .categorias-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid black 1px;
+      padding: 20px;
+      margin: -1px;
+      min-height: 100px;
+      min-width: 200px;
+    }
+    }

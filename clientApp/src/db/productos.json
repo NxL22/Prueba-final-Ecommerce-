@@ -1,0 +1,91 @@
+[
+      {
+        "id": 1,
+        "nombre": "DreamCast",
+        "categoria": "ATARI",
+        "precio": 75000,
+        "img1": "dreamcast.png",
+        "imgs": ["dreamcast.png"]
+      },
+    {
+        "id": 2,
+        "nombre": "DreamCast",
+        "categoria": "ATARI",
+        "precio": 75000,
+        "img1": "dreamcast.png",
+        "img2": ""
+      },
+      {
+        "id": 3,
+        "nombre": "DreamCast",
+        "categoria": "ATARI",
+        "precio": 75000,
+        "img1": "dreamcast.png",
+        "img2": ""
+      },
+      {
+        "id":4,
+        "nombre": "DreamCast",
+        "categoria": "NINTENDO",
+        "precio": 75000,
+        "img1": "dreamcast.png",
+        "img2": ""
+      },
+      {
+        "id": 5,
+        "nombre": "DreamCast",
+        "categoria": "NINTENDO",
+        "precio": 75000,
+        "img1": "dreamcast.png",
+        "img2": ""
+      },
+      {
+        "id": 6,
+        "nombre": "DreamCast",
+        "categoria": "NINTENDO",
+        "precio": 75000,
+        "img1": "dreamcast.png",
+        "img2": ""
+      },
+      {
+          "id": 7,
+          "nombre": "DreamCast",
+          "categoria": "NINTENDO",
+          "precio": 75000,
+          "img1": "dreamcast.png",
+          "img2": ""
+        },
+        {
+          "id": 8,
+          "nombre": "DreamCast",
+          "categoria": "NINTENDO",
+          "precio": 75000,
+          "img1": "dreamcast.png",
+          "img2": ""
+        },
+        {
+          "id":9,
+          "nombre": "DreamCast",
+          "categoria": "PLAYSTATION",
+          "precio": 75000,
+          "img1": "dreamcast.png",
+          "img2": ""
+        },
+        {
+          "id": 10,
+          "nombre": "DreamCast",
+          "categoria": "PLAYSTATION",
+          "precio": 75000,
+          "img1": "dreamcast.png",
+          "img2": ""
+        },
+        {
+          "id": 11,
+          "nombre": "DreamCast",
+          "categoria": "SEGA",
+          "precio": 75000,
+          "img1": "dreamcast.png",
+          "img2": ""
+        }
+  ]
+  

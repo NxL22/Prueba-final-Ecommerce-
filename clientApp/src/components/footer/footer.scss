@@ -1,0 +1,41 @@
+.parrafo-footer,
+.copyright {
+  font-size: large;
+  font-weight: 500;
+  color: #db8c1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0; /* Elimina el margen inferior entre los párrafos */
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: -2px -2px;
+  height: 2em;
+}
+
+.instagram-icon {
+  margin-left: 10px; /* Ajusta el espacio entre el texto y el icono de Instagram */
+  transition: color 2s ease; /* Agrega una transición de color suave para el hover */
+  font-size: 30px;
+  height: 25px;
+}
+
+  footer {
+  margin-top: 2em;
+}
+
+.instagram-icon:hover {
+  color: #ff9a0e; /* Cambia el color del icono cuando el mouse está sobre él */
+}
+
+.instagram-icon {
+  width: 30px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  filter: grayscale(75%); /* Convierte la imagen a escala de grises por defecto */
+  transition: filter 2s ease; /* Agrega una transición suave para la propiedad filter */
+
+  &:hover {
+    filter: none; /* Elimina el efecto de escala de grises al pasar el mouse sobre la imagen */
+    transition: 0.2s ease-in-out;
+  }
+}

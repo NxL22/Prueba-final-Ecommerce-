@@ -1,0 +1,81 @@
+.detalle-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 8rem; /* Espaciado entre el borde de la página y el detalle del producto */
+    background-color: #ebe7e7;
+    box-shadow: 0 4px 8px rgba(0, 2, 0, 0.8);
+
+    .logo-producto {
+        flex: 1;
+        max-width: 40%;
+        margin-left: 2em; /* Espaciado a la izquierda del logotipo */
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .producto-info {
+        flex: 1;
+        max-width: 55%;
+        padding: 40px;
+        
+
+        .producto-nombre {
+            font-size: 1.8rem;
+            margin: 0;
+            color: #333;
+        }
+
+        .producto-descripcion {
+            font-size: 1.5rem;
+            margin: 10px 2px; /* Ajuste del margen vertical */
+            color: #777;
+            text-align: justify;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        .producto-imagen {
+            img {
+                max-width: 10em; /* Tamaño máximo de la imagen del producto */
+                height: 7em; /* Altura fija de la imagen del producto */
+            }
+        }
+
+        .producto-precio {
+            font-size: 2rem;
+            margin: 10px 0;
+            color: #3a059bbe;
+            font-family: 'VT323', monospace;
+
+            big {
+                font-weight: bold;
+                margin-right: 5px;
+            }
+        }
+
+        .agregar-carrito {
+            background-color: #007bff;
+            color: #ece9e9;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.5s;
+            width: 98%;
+            margin-top: 1em; /* Espaciado superior del botón */
+            border: 2px solid;
+            font-family: 'VT323', monospace;
+
+            &:hover {
+                background-color: #0056b3;
+                border-color: #0803ff;
+            }
+        }
+    }
+}
